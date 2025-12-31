@@ -24,10 +24,10 @@ const Navbar = () => {
     <>
       <div className="hidden lg:flex px-8 py-6 justify-between items-center">
         <Image
-          className="object-cover w-[64px] h-[46px]"
           src="/dokumPancaTimurR/logo.jpg"
-          width={20}
-          height={20}
+          width={64}
+          height={46}
+          className="object-contain"
           alt="Gambar Logo Panca Timur Raya"
         />
         <div className="flex flex-row nav gap-14">
@@ -47,7 +47,7 @@ const Navbar = () => {
         <Button
           onClick={handleContactUs}
           variant={'default'}
-          className="hidden lg:flex flex w-[141px] h-[48px] flex-shrink-0"
+          className="hidden flex w-[141px] flex-shrink-0"
         >
           <Phone className="w-4 h-4" />
           Contact Us
@@ -57,10 +57,10 @@ const Navbar = () => {
       {/* tablet & mobile */}
       <div className="lg:hidden flex flex-row justify-between px-[32px] py-[20px] ">
         <Image
-          className="object-cover w-[64px] h-[46px]"
           src="/dokumPancaTimurR/logo.jpg"
-          width={20}
-          height={20}
+          width={64}
+          height={46}
+          className="object-contain"
           alt="Gambar Logo Panca Timur Raya"
         />
         <button onClick={toggleMenu}>
@@ -87,7 +87,7 @@ const Navbar = () => {
           <Button
             onClick={handleContactUs}
             variant={'default'}
-            className="flex flex w-[320px] h-[48px] flex-shrink-0 -mt-[80px]"
+            className="flex flex w-[320px] flex-shrink-0 -mt-[80px]"
           >
             <Phone className="w-4 h-4" />
             Contact Us
