@@ -105,10 +105,10 @@
   /* new h1 tablet */
   font-size: 28px;
   font-weight: 700;
-  /* font-style: normal; */
-  /* line-height: normal; */
-}
+  font-style: normal;
 
+  line-height: normal;
+}
 .titleh2 {
   /* color: var(--primary-text, #10385D); */
   text-align: center;
@@ -118,6 +118,15 @@
   font-style: normal;
   font-weight: 600;
   line-height: 60px; /* 250% */
+}
+.titleh3 {
+  color: var(--primary-text, #10385d);
+
+  /* new h3 tablet */
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .alternative {
   color: var(--Alternative-Text, #747775);
@@ -134,6 +143,15 @@
 
   /* new p tablet */
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.pdialog {
+  color: var(--Alternative-Text, #747775);
+
+  /* new pdialog */
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -159,6 +177,24 @@
     font-weight: 600;
     line-height: 60px; /* 150% */
   }
+  .titleh3 {
+    color: var(--primary-text, #10385d);
+
+    /* new h3 */
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .alternative {
+    color: var(--Alternative-Text, #747775);
+
+    /* new h6-alternative */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
   .p {
     /* color: #fff; */
     text-align: center;
@@ -169,11 +205,11 @@
     font-weight: 400;
     line-height: 40px; /* 166.667% */
   }
-  .alternative {
+  .pdialog {
     color: var(--Alternative-Text, #747775);
 
-    /* new h6-alternative */
-    font-size: 16px;
+    /* new p dialog */
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
