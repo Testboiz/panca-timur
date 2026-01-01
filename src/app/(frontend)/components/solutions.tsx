@@ -21,7 +21,7 @@ const Solutions = () => {
   }
   return (
     <>
-      <div className="mt-10 bg-[#F5F7FA] py-[25px] justify-items-center">
+      <div className="mt-10 bg-[#F5F7FA] py-[25px] justify-items-center ">
         <h1 className="titleh1 text-[#10385D] lg:mb-[32px] text-center ">Solutions</h1>
         <h2 className="titleh2 text-[#10385D] lg:mb-[24px]">Services</h2>
 
@@ -56,8 +56,8 @@ const Solutions = () => {
               <DialogContent className="w-[350px] h-[760px] md:w-[720px] md:h-[405px] lg:w-[1100px] lg:h-[550px] p-0 flex flex-col md:flex-row">
                 <div
                   className="relative w-full h-[557px] md:flex-1 md:h-full overflow-hidden     rounded-tl-[8px] rounded-tr-[8px]
-    md:rounded-tl-[8px] md:rounded-bl-[8px]
-    md:rounded-tr-none md:rounded-br-none"
+              md:rounded-tl-[8px] md:rounded-bl-[8px]
+              md:rounded-tr-none md:rounded-br-none"
                 >
                   <Image
                     src="/dokumPancaTimurR/mechanicalplumbing3.jpg"
@@ -122,8 +122,8 @@ const Solutions = () => {
                 <DialogContent className="w-[350px] h-[760px] md:w-[720px] md:h-[405px] lg:w-[1100px] lg:h-[550px] p-0 flex flex-col md:flex-row">
                   <div
                     className="relative w-full h-[557px] md:flex-1 md:h-full overflow-hidden     rounded-tl-[8px] rounded-tr-[8px]
-    md:rounded-tl-[8px] md:rounded-bl-[8px]
-    md:rounded-tr-none md:rounded-br-none"
+                md:rounded-tl-[8px] md:rounded-bl-[8px]
+                md:rounded-tr-none md:rounded-br-none"
                   >
                     <Image
                       src="/dokumPancaTimurR/hvac5.jpg"
@@ -187,8 +187,8 @@ const Solutions = () => {
                 <DialogContent className="w-[350px] h-[760px] md:w-[720px] md:h-[405px] lg:w-[1100px] lg:h-[550px] p-0 flex flex-col md:flex-row">
                   <div
                     className="relative w-full h-[557px] md:flex-1 md:h-full overflow-hidden     rounded-tl-[8px] rounded-tr-[8px]
-    md:rounded-tl-[8px] md:rounded-bl-[8px]
-    md:rounded-tr-none md:rounded-br-none"
+                md:rounded-tl-[8px] md:rounded-bl-[8px]
+                md:rounded-tr-none md:rounded-br-none"
                   >
                     <Image
                       src="/dokumPancaTimurR/electrical6.jpg"
@@ -307,9 +307,9 @@ const Solutions = () => {
           </div>
         </div>
 
-        <div className="flex justify-center">
-          <Link href={'/detailSolutions'}>
-            <Button variant="secondary" className="mt-10 w-[243px] ">
+        <div className="flex w-full justify-center p-4 ">
+          <Link href={'/detailSolutions'} className=" w-full flex justify-center ">
+            <Button variant="secondary" className="flex w-full mt-4 md:w-[691px] lg:w-[243px] ">
               View All Solutions
               <ArrowRight />
             </Button>
