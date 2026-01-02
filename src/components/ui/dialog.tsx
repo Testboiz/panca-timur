@@ -67,7 +67,7 @@ function DialogContent({
         {showCloseButton && (
           <DialogPrimitive.Close
             data-slot="dialog-close"
-            className="absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:outline-none"
+            className="absolute top-4 right-4 rounded-xs opacity-70 transition-opacity bg-white/80 backdrop-blur hover:opacity-100 focus:outline-none"
           >
             <XIcon className="w-6 h-6" />
             <span className="sr-only">Close</span>
@@ -90,11 +90,7 @@ function DialogHeader({ className, ...props }: React.ComponentProps<'div'>) {
 
 function DialogFooter({ className, ...props }: React.ComponentProps<'div'>) {
   return (
-    <div
-      data-slot="dialog-footer"
-      className={cn('flex flex-col-reverse gap-2 sm:flex-row sm:justify-end', className)}
-      {...props}
-    />
+    <div data-slot="dialog-footer" className={cn('text-left alternative', className)} {...props} />
   )
 }
 
@@ -102,7 +98,7 @@ function DialogTitle({ className, ...props }: React.ComponentProps<typeof Dialog
   return (
     <DialogPrimitive.Title
       data-slot="dialog-title"
-      className={cn('leading-none titleh3', className)}
+      className={cn('leading-none ', className)}
       {...props}
     />
   )
@@ -115,7 +111,7 @@ function DialogDescription({
   return (
     <DialogPrimitive.Description
       data-slot="dialog-description"
-      className={cn('pdialog', className)}
+      className={cn('', className)}
       {...props}
     />
   )
