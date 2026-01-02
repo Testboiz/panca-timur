@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <div className="mt-6 flex flex-col bg-[#10385D] mx-6 rounded-[8px] justify-center items-center gap-[32px] lg:gap-[32px] py-[51px] px-[20px] md:py-[40px] md:px-[44px] lg:py-[90px] lg:px-[100px]">
       <h1 className="text-[white] titleh1">About Us</h1>
-      <p className="p text-[white]">
+      <p className="p text-[white] text-center">
         PT. Panca Timur Raya merupakan perusahaan swasta berskala nasional yang berkomitmen
         meningkatkan performa perusahaan melalui penguatan manajemen, pengembangan budaya
         perusahaan, implementasi sistem informasi, penguatan manajemen risiko, dan peningkatan

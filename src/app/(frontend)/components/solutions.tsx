@@ -68,8 +68,8 @@ const Solutions = () => {
                 </div>
                 <div className="w-[350px] md:w-[374px] lg:w-[626px] h-full p-[20px] lg:p-[40px] flex flex-col gap-5">
                   <DialogHeader className="text-left gap-[20px]">
-                    <DialogTitle>Mechanical & Plumbing</DialogTitle>
-                    <DialogDescription>
+                    <DialogTitle className="titleh3">Mechanical & Plumbing</DialogTitle>
+                    <DialogDescription className="pdialog">
                       Berfokus pada desain, instalasi, perbaikan dan perawatan seperti:
                     </DialogDescription>
                     <ul className="-mt-2 list-disc pl-10 pdialog">
@@ -134,8 +134,10 @@ const Solutions = () => {
                   </div>
                   <div className="w-[350px] md:w-[374px] lg:w-[626px] h-full p-[20px] lg:p-[40px] flex flex-col gap-5">
                     <DialogHeader className="text-left gap-[20px]">
-                      <DialogTitle>Heating, Ventilation & Air Conditioning (HVAC)</DialogTitle>
-                      <DialogDescription>
+                      <DialogTitle className="titleh3">
+                        Heating, Ventilation & Air Conditioning (HVAC)
+                      </DialogTitle>
+                      <DialogDescription className="pdialog">
                         Berfokus pada desain, instalasi, perbaikan, perawatan, dan troubleshooting
                         HVAC, seperti:
                       </DialogDescription>
@@ -199,8 +201,10 @@ const Solutions = () => {
                   </div>
                   <div className="w-[350px] md:w-[374px] lg:w-[626px] h-full p-[20px] lg:p-[40px] flex flex-col gap-5">
                     <DialogHeader className="text-left gap-[20px]">
-                      <DialogTitle>Electrical</DialogTitle>
-                      <DialogDescription>Menawarkan jasa elektrikal, seperti:</DialogDescription>
+                      <DialogTitle className="titleh3">Electrical</DialogTitle>
+                      <DialogDescription className="pdialog">
+                        Menawarkan jasa elektrikal, seperti:
+                      </DialogDescription>
                       <ul className="-mt-2 list-disc pl-10 pdialog">
                         <li>Instalasi jalur pengkabelan gedung dan industri</li>
                         <li>Instalasi panel listrik ( TM- TR / MV-LV Panel)</li>
