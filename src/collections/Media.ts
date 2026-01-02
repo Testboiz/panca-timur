@@ -10,6 +10,10 @@ export const Media: CollectionConfig = {
       name: 'alt',
       type: 'text',
       required: true,
+      label: {
+        id: 'Teks Alternatif',
+        en: 'Alt Text',
+      },
     },
   ],
   upload: true,
