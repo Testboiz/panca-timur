@@ -25,13 +25,15 @@ const Footer = () => {
       </div>
       <div className="pt-[58px] flex justify-between p-8 flex-col md:flex-row">
         <div className=" w-[306px]">
-          <Image
-            src="/dokumPancaTimurR/logo.jpg"
-            width={128}
-            height={93}
-            className="object-contain"
-            alt="Gambar Logo Panca Timur Raya"
-          />
+          <Link href={'/'}>
+            <Image
+              src="/dokumPancaTimurR/logo.jpg"
+              width={128}
+              height={93}
+              className="object-contain"
+              alt="Gambar Logo Panca Timur Raya"
+            />
+          </Link>
           <p className="footer mt-[13px]">
             Head Office:Komp. Perumahan Pondok Cempaka Indah Blok F No.7, Bandulan-Mulyorejo,
             Malang, Jawa Timur Representative Office:Perumahan Masnaga Jalan Gunung Kerinci 1 Blok A

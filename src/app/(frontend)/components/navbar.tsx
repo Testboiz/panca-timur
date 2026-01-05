@@ -23,13 +23,15 @@ const Navbar = () => {
   return (
     <>
       <div className="hidden lg:flex px-8 py-6 justify-between items-center">
-        <Image
-          src="/dokumPancaTimurR/logo.jpg"
-          width={64}
-          height={46}
-          className="object-contain"
-          alt="Gambar Logo Panca Timur Raya"
-        />
+        <Link href={'/'}>
+          <Image
+            src="/dokumPancaTimurR/logo.jpg"
+            width={64}
+            height={46}
+            className="object-contain"
+            alt="Gambar Logo Panca Timur Raya"
+          />
+        </Link>
         <div className="flex flex-row nav gap-14">
           <Link href={'/detailAboutUs'} className="flex items-center">
             About Us
@@ -56,13 +58,16 @@ const Navbar = () => {
 
       {/* tablet & mobile */}
       <div className="lg:hidden flex flex-row justify-between px-[32px] py-[20px] ">
-        <Image
-          src="/dokumPancaTimurR/logo.jpg"
-          width={64}
-          height={46}
-          className="object-contain"
-          alt="Gambar Logo Panca Timur Raya"
-        />
+        <Link href={'/'}>
+          <Image
+            src="/dokumPancaTimurR/logo.jpg"
+            width={64}
+            height={46}
+            className="object-contain"
+            alt="Gambar Logo Panca Timur Raya"
+          />
+        </Link>
+
         <button onClick={toggleMenu}>
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
