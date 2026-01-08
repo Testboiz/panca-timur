@@ -26,11 +26,11 @@ import {
 
 import { motion } from 'motion/react'
 
-import { Metadata } from 'next'
+// import { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Insights and Updates Page | Panca Timur Raya',
-}
+// export const metadata: Metadata = {
+//   title: 'Insights and Updates Page | Panca Timur Raya',
+// }
 
 export default function InsightsUpdatesPage() {
   const handleBookaConsultation = () => {

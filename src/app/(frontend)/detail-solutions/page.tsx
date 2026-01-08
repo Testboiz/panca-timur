@@ -25,11 +25,11 @@ import {
   CarouselNext,
 } from '@/components/ui/carousel'
 
-import { Metadata } from 'next'
+// import { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Solutions Page | Panca Timur Raya',
-}
+// export const metadata: Metadata = {
+//   title: 'Solutions Page | Panca Timur Raya',
+// }
 
 export default function SolutionsPage() {
   const handleBookaConsultation = () => {

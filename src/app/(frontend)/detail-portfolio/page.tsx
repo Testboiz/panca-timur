@@ -10,11 +10,11 @@ import { motion } from 'motion/react'
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
 import React from 'react'
 
-import { Metadata } from 'next'
+// import { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Portfolio Page | Panca Timur Raya',
-}
+// export const metadata: Metadata = {
+//   title: 'Portfolio Page | Panca Timur Raya',
+// }
 
 export default function PortfolioPage() {
   const galleryAll = [
