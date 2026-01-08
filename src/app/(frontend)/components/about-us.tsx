@@ -21,7 +21,7 @@ const AboutUs = () => {
         perusahaan, implementasi sistem informasi, penguatan manajemen risiko, dan peningkatan
         kepuasan pelanggan.
       </motion.p>
-      <Link href={'/detailAboutUs'} className="w-full flex justify-center">
+      <Link href={'/detail-about-us'} className="w-full flex justify-center">
         <Button variant="secondary" className=" w-full lg:w-[243px]">
           About Our Company
           <ArrowRight />

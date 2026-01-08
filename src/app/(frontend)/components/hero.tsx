@@ -36,7 +36,7 @@ const Hero = () => {
             Book a Consultation
           </Button>
 
-          <Link href={'/detailPortfolio'}>
+          <Link href={'/detail-portfolio'}>
             <Button variant="secondary" className="w-full lg:w-[243px]">
               View Projects
               <ArrowUpRight />

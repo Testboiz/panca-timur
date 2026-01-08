@@ -45,10 +45,10 @@ const Footer = () => {
         </div>
         <div className="text-left mt-8 md:mt-0 md:text-right flex flex-col gap-[12px]">
           <p className="font-[700] text-[20px]">Menu</p>
-          <Link href={'/detailAboutUs'}>About Us</Link>
-          <Link href={'/detailSolutions'}>Solutions</Link>
-          <Link href={'/detailPortfolio'}>Portfolio</Link>
-          <Link href={'/detailInsightsUpdates'}>Insights & Updates</Link>
+          <Link href={'/detail-about-us'}>About Us</Link>
+          <Link href={'/detail-solutions'}>Solutions</Link>
+          <Link href={'/detail-portfolio'}>Portfolio</Link>
+          <Link href={'/detail-insights-updates'}>Insights & Updates</Link>
           <div className="flex flex-row gap-4 justify-start md:justify-end">
             <Link href={'mailto:panca_timur_raya@yahoo.com'} target="_blank">
               <Mail />

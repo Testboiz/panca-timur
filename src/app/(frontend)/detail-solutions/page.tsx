@@ -62,7 +62,7 @@ export default function AboutUsPage() {
             </Button>
 
             <Button asChild variant="secondary" className="w-full lg:w-[243px]">
-              <Link href={'/detailPortfolio'} className="flex items-center justify-center gap-2">
+              <Link href={'/detail-portfolio'} className="flex items-center justify-center gap-2">
                 View Projects
                 <ArrowUpRight />
               </Link>

@@ -87,7 +87,7 @@ const InsightsUpdates = () => {
                       </BreadcrumbItem>
                       <BreadcrumbSeparator />
                       <BreadcrumbItem>
-                        <BreadcrumbLink href="/detailInsightsUpdates">
+                        <BreadcrumbLink href="/detail-insights-updates">
                           Insights & Updates
                         </BreadcrumbLink>
                       </BreadcrumbItem>
@@ -188,7 +188,7 @@ const InsightsUpdates = () => {
                       </BreadcrumbItem>
                       <BreadcrumbSeparator />
                       <BreadcrumbItem>
-                        <BreadcrumbLink href="/detailInsightsUpdates">
+                        <BreadcrumbLink href="/detail-insights-updates">
                           Insights & Updates
                         </BreadcrumbLink>
                       </BreadcrumbItem>
@@ -233,7 +233,7 @@ const InsightsUpdates = () => {
             </DialogContent>
           </Dialog>
         </div>
-        <Link href={'/detailInsightsUpdates'} className=" w-full flex justify-center ">
+        <Link href={'/detail-insights-updates'} className=" w-full flex justify-center ">
           <Button
             variant="secondary"
             className="flex w-full mt-[15px] md:mt-[24px] lg:mt-[32px] md:w-[691px] lg:w-[243px] "

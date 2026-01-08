@@ -399,7 +399,7 @@ const Solutions = () => {
         </div>
 
         <div className="flex w-full justify-center p-4 ">
-          <Link href={'/detailSolutions'} className=" w-full flex justify-center ">
+          <Link href={'/detail-solutions'} className=" w-full flex justify-center ">
             <Button variant="secondary" className="flex w-full mt-4 md:w-[691px] lg:w-[243px] ">
               View All Solutions
               <ArrowRight />

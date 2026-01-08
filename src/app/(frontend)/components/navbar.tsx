@@ -49,7 +49,7 @@ const Navbar = () => {
         </Link>
         <div className="flex flex-row nav gap-14">
           <MotionLink
-            href={'/detailAboutUs'}
+            href={'/detail-about-us'}
             whileHover={{
               scale: 1.03,
               color: '#0070c0',
@@ -63,7 +63,7 @@ const Navbar = () => {
             About Us
           </MotionLink>
           <MotionLink
-            href={'/detailSolutions'}
+            href={'/detail-solutions'}
             whileHover={{
               scale: 1.03,
               color: '#0070c0',
@@ -77,7 +77,7 @@ const Navbar = () => {
             Solutions
           </MotionLink>
           <MotionLink
-            href={'/detailPortfolio'}
+            href={'/detail-portfolio'}
             whileHover={{
               scale: 1.03,
               color: '#0070c0',
@@ -91,7 +91,7 @@ const Navbar = () => {
             Portfolio
           </MotionLink>
           <MotionLink
-            href={'/detailInsightsUpdates'}
+            href={'/detail-insights-updates'}
             whileHover={{
               scale: 1.03,
               color: '#0070c0',
@@ -136,7 +136,7 @@ const Navbar = () => {
         <div className="lg:hidden flex flex-col justify-center items-center ">
           <div className="nav flex flex-col px-8 gap-[48px] justify-center items-center min-h-[calc(100vh-230px)]">
             <MotionLink
-              href={'/detailAboutUs'}
+              href={'/detail-about-us'}
               onClick={() => setIsOpen(false)}
               whileHover={{
                 scale: 1.03,
@@ -150,7 +150,7 @@ const Navbar = () => {
               About Us
             </MotionLink>
             <MotionLink
-              href={'/detailSolutions'}
+              href={'/detail-solutions'}
               onClick={() => setIsOpen(false)}
               whileHover={{
                 scale: 1.03,
@@ -164,7 +164,7 @@ const Navbar = () => {
               Solutions
             </MotionLink>
             <MotionLink
-              href={'/detailPortfolio'}
+              href={'/detail-portfolio'}
               onClick={() => setIsOpen(false)}
               whileHover={{
                 scale: 1.03,
@@ -178,7 +178,7 @@ const Navbar = () => {
               Portfolio
             </MotionLink>
             <MotionLink
-              href={'/detailInsightsUpdates'}
+              href={'/detail-insights-updates'}
               onClick={() => setIsOpen(false)}
               whileHover={{
                 scale: 1.03,
