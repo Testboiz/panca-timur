@@ -47,6 +47,7 @@ export default function SolutionsPage() {
           fill
           alt="Image Solutions"
           src={'/dokumPancaTimurR/electrical4.jpg'}
+          // sizes="100vw"
         />
       </div>
       <div className="flex flex-col lg:flex-row px-[24px] py-[12px] md:px-[36px] md:py-[20px] xl:px-[30px] xl:py-[57px] ">

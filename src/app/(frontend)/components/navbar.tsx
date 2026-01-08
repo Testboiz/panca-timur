@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react'
 
 import { motion } from 'motion/react'
 
-const MotionLink = motion(Link)
+const MotionLink = motion.create(Link)
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -43,7 +43,9 @@ const Navbar = () => {
             src="/dokumPancaTimurR/logo.jpg"
             width={64}
             height={46}
+            style={{ height: 'auto' }}
             className="object-contain"
+            //sizes="64px"
             alt="Gambar Logo Panca Timur Raya"
           />
         </Link>
@@ -127,7 +129,9 @@ const Navbar = () => {
             src="/dokumPancaTimurR/logo.jpg"
             width={64}
             height={46}
+            style={{ height: 'auto' }}
             className="object-contain"
+            // sizes="64px"
             alt="Gambar Logo Panca Timur Raya"
           />
         </Link>

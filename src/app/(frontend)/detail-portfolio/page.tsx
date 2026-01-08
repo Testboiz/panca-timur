@@ -3,10 +3,9 @@
 import Image from 'next/image'
 import Navbar from '../components/navbar'
 import { Button } from '@/components/ui/button'
-import { Phone, RefreshCcw } from 'lucide-react'
+import { Phone } from 'lucide-react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import Footer from '../components/footer'
-import { motion } from 'motion/react'
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
 import React from 'react'
 
@@ -15,6 +14,12 @@ import React from 'react'
 // export const metadata: Metadata = {
 //   title: 'Portfolio Page | Panca Timur Raya',
 // }
+
+import dynamic from 'next/dynamic'
+import GalleryMechanicalPlumbing from './components/gallery-mechanical-plumbing'
+import GalleryElectrical from './components/gallery-electrical'
+const GalleryAll = dynamic(() => import('./components/gallery-all'), { ssr: false })
+const GalleryHvac = dynamic(() => import('./components/gallery-all'), { ssr: false })
 
 export default function PortfolioPage() {
   const galleryAll = [
@@ -59,7 +64,7 @@ export default function PortfolioPage() {
   ]
 
   const galleryHvac = [
-    { src: '/dokumPancaTimurR/hvac1.jpg', alt: 'hvac1' },
+    { src: '/dokumPancaTimurR/jpg', alt: 'hvac1' },
     { src: '/dokumPancaTimurR/hvac2.jpg', alt: 'hvac2' },
     { src: '/dokumPancaTimurR/hvac3.jpg', alt: 'hvac3' },
     { src: '/dokumPancaTimurR/hvac4.jpg', alt: 'hvac4' },
@@ -81,7 +86,7 @@ export default function PortfolioPage() {
     { src: '/dokumPancaTimurR/mechanicalplumbing5.jpg', alt: 'mechanicalplumbing5' },
   ]
 
-  const [visibleCount, setVisibleCount] = React.useState(6)
+  // const [visibleCount, setVisibleCount] = React.useState(6)
 
   const handleBookaConsultation = () => {
     const pesan = `Halo, saya ingin menanyakan ...`
@@ -142,119 +147,19 @@ export default function PortfolioPage() {
           </ScrollArea>
 
           <TabsContent value="all" className="mt-[8px] md:mt-0">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.5 }}
-              viewport={{ once: true }}
-              className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-y-[16px] md:gap-y-[24px] lg:gap-y-[44px] "
-            >
-              {galleryAll.slice(0, visibleCount).map((item, index) => (
-                <div key={index} className="relative w-[350px] h-[467px]">
-                  <Image src={item.src} alt={item.alt} fill className="object-cover" />
-                </div>
-              ))}
-            </motion.div>
-            {visibleCount < galleryAll.length && (
-              <div className="mt-[32px] px-6 lg:px-0 flex justify-center">
-                <Button
-                  variant="secondary"
-                  className="w-full  lg:w-[243px]"
-                  onClick={() => setVisibleCount((prev) => prev + 3)}
-                  aria-label="muat foto lebih banyak"
-                >
-                  Load More
-                  <RefreshCcw />
-                </Button>
-              </div>
-            )}
+            <GalleryAll items={galleryAll} />
           </TabsContent>
 
           <TabsContent value="mechanicalplumbing" className="mt-[52px] md:mt-0">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.5 }}
-              viewport={{ once: true }}
-              className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  justify-items-center gap-y-[16px] md:gap-y-[24px] lg:gap-y-[44px]  "
-            >
-              {galleryMechanicalPlumbing.slice(0, visibleCount).map((item, index) => (
-                <div key={index} className="relative w-[350px] h-[467px]">
-                  <Image src={item.src} alt={item.alt} fill className="object-cover" />
-                </div>
-              ))}
-            </motion.div>
-            {visibleCount < galleryMechanicalPlumbing.length && (
-              <div className="mt-[32px] px-6 lg:px-0 flex justify-center">
-                <Button
-                  variant="secondary"
-                  className="w-full  lg:w-[243px]"
-                  onClick={() => setVisibleCount((prev) => prev + 3)}
-                  aria-label="muat foto lebih banyak"
-                >
-                  Load More
-                  <RefreshCcw />
-                </Button>
-              </div>
-            )}
+            <GalleryMechanicalPlumbing items={galleryMechanicalPlumbing} />
           </TabsContent>
 
           <TabsContent value="hvac" className="mt-[52px] md:mt-0">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.5 }}
-              viewport={{ once: true }}
-              className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  justify-items-center gap-y-[16px] md:gap-y-[24px] lg:gap-y-[44px]  "
-            >
-              {galleryHvac.slice(0, visibleCount).map((item, index) => (
-                <div key={index} className="relative w-[350px] h-[467px]">
-                  <Image src={item.src} alt={item.alt} fill className="object-cover" />
-                </div>
-              ))}
-            </motion.div>
-            {visibleCount < galleryHvac.length && (
-              <div className="mt-[32px] px-6 lg:px-0 flex justify-center">
-                <Button
-                  variant="secondary"
-                  className="w-full  lg:w-[243px]"
-                  onClick={() => setVisibleCount((prev) => prev + 3)}
-                  aria-label="muat foto lebih banyak"
-                >
-                  Load More
-                  <RefreshCcw />
-                </Button>
-              </div>
-            )}
+            <GalleryHvac items={galleryHvac} />
           </TabsContent>
 
           <TabsContent value="electrical" className="mt-[52px] md:mt-0">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1.5 }}
-              viewport={{ once: true }}
-              className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  justify-items-center gap-y-[16px] md:gap-y-[24px] lg:gap-y-[44px] "
-            >
-              {galleryElectrical.slice(0, visibleCount).map((item, index) => (
-                <div key={index} className="relative w-[350px] h-[467px]">
-                  <Image src={item.src} alt={item.alt} fill className="object-cover" />
-                </div>
-              ))}
-            </motion.div>
-            {visibleCount < galleryElectrical.length && (
-              <div className="mt-[32px] px-6 lg:px-0 flex justify-center">
-                <Button
-                  variant="secondary"
-                  className="w-full  lg:w-[243px]"
-                  onClick={() => setVisibleCount((prev) => prev + 3)}
-                  aria-label="muat foto lebih banyak"
-                >
-                  Load More
-                  <RefreshCcw />
-                </Button>
-              </div>
-            )}
+            <GalleryElectrical items={galleryElectrical} />
           </TabsContent>
         </Tabs>
       </div>
