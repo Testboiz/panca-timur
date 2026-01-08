@@ -289,7 +289,7 @@ export default function AboutUsPage() {
                       </Button>
                     </DialogTrigger>
                     <DialogTitle></DialogTitle>
-                    <DialogContent className=" w-[340px] h-[415px] md:w-[600px] md:h-[936px] lg:w-[579px] lg:h-[763px] ">
+                    <DialogContent className=" w-[340px] h-[415px] md:w-[400px] md:h-[536px] xl:w-[439px] xl:h-[623px] ">
                       <Image
                         src="/dokumPancaTimurR/dokumenperusahaan3.jpg"
                         alt="Dokumen Perusahaan Perizinan Berusaha Berbasis Resiko"
@@ -322,7 +322,7 @@ export default function AboutUsPage() {
                       </Button>
                     </DialogTrigger>
                     <DialogTitle></DialogTitle>
-                    <DialogContent className=" w-[340px] h-[415px] md:w-[600px] md:h-[936px] lg:w-[579px] lg:h-[763px] ">
+                    <DialogContent className=" w-[340px] h-[415px] md:w-[400px] md:h-[536px] xl:w-[439px] xl:h-[623px] ">
                       <Image
                         src="/dokumPancaTimurR/aktapendirian.jpg"
                         alt="Dokumen Perusahaan Akta Pendirian Perseoran Terbatas"
@@ -355,7 +355,7 @@ export default function AboutUsPage() {
                       </Button>
                     </DialogTrigger>
                     <DialogTitle></DialogTitle>
-                    <DialogContent className="w-[340px] h-[415px] md:w-[600px] md:h-[936px] lg:w-[579px] lg:h-[763px] ">
+                    <DialogContent className=" w-[340px] h-[415px] md:w-[400px] md:h-[536px] xl:w-[439px] xl:h-[623px] ">
                       <Image
                         src="/dokumPancaTimurR/aktapengesahan.jpg"
                         alt="Dokumen Perusahaan Akta Pengesahan Badan Hukum"
