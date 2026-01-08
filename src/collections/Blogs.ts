@@ -14,9 +14,7 @@ export const Blogs: CollectionConfig = {
   admin: {
     useAsTitle: 'title',
   },
-  access: {
-    read: () => true,
-  },
+
   versions: {
     drafts: true,
   },

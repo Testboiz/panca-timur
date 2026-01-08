@@ -16,9 +16,6 @@ export const Services: CollectionConfig = {
       en: 'Services',
     },
   },
-  access: {
-    read: () => true,
-  },
   versions: {
     drafts: true,
   },
