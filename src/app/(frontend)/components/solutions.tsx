@@ -71,7 +71,11 @@ const Solutions = () => {
                   <Dialog>
                     <DialogTrigger asChild>
                       <div className="w-full p-4 md:-mt-2">
-                        <Button className="w-full " variant="secondary">
+                        <Button
+                          className="w-full "
+                          variant="secondary"
+                          aria-label="Pelajari lebih lanjut mengenai Mechanical dan Plumbing (Learn More)"
+                        >
                           Learn More
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
@@ -105,7 +109,11 @@ const Solutions = () => {
                             <li>Cooling Tower & Air Compressor</li>
                           </ul>
                         </DialogHeader>
-                        <Button onClick={handleBookaConsultation} className="w-full lg:w-[243px]">
+                        <Button
+                          onClick={handleBookaConsultation}
+                          className="w-full lg:w-[243px]"
+                          aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
+                        >
                           <Phone /> Book a Consultation
                         </Button>
                       </div>
@@ -148,7 +156,11 @@ const Solutions = () => {
                   <Dialog>
                     <DialogTrigger asChild>
                       <div className="w-full p-4 -mt-4 ">
-                        <Button className="w-full" variant="secondary">
+                        <Button
+                          className="w-full"
+                          variant="secondary"
+                          aria-label="Pelajari lebih lanjut mengenai Mechanical dan Plumbing (Learn More)"
+                        >
                           Learn More
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
@@ -184,7 +196,11 @@ const Solutions = () => {
                             <li>dll.</li>
                           </ul>
                         </DialogHeader>
-                        <Button onClick={handleBookaConsultation} className="w-full lg:w-[243px]">
+                        <Button
+                          onClick={handleBookaConsultation}
+                          className="w-full lg:w-[243px]"
+                          aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
+                        >
                           <Phone /> Book a Consultation
                         </Button>
                       </div>
@@ -223,7 +239,11 @@ const Solutions = () => {
                   <Dialog>
                     <DialogTrigger asChild>
                       <div className="w-full p-4 -mt-2 ">
-                        <Button className="w-full " variant="secondary">
+                        <Button
+                          className="w-full "
+                          variant="secondary"
+                          aria-label="Pelajari lebih lanjut mengenai Mechanical dan Plumbing (Learn More)"
+                        >
                           Learn More
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
@@ -254,7 +274,11 @@ const Solutions = () => {
                             <li>dll.</li>
                           </ul>
                         </DialogHeader>
-                        <Button onClick={handleBookaConsultation} className="w-full lg:w-[243px]">
+                        <Button
+                          onClick={handleBookaConsultation}
+                          className="w-full lg:w-[243px]"
+                          aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
+                        >
                           <Phone /> Book a Consultation
                         </Button>
                       </div>
@@ -399,8 +423,16 @@ const Solutions = () => {
         </div>
 
         <div className="flex w-full justify-center p-4 ">
-          <Link href={'/detail-solutions'} className=" w-full flex justify-center ">
-            <Button variant="secondary" className="flex w-full mt-4 md:w-[691px] lg:w-[243px] ">
+          <Link
+            href={'/detail-solutions'}
+            className=" w-full flex justify-center "
+            aria-label="Link lihat semua solusi layanan dan produk (Lihat semua solusi)"
+          >
+            <Button
+              variant="secondary"
+              className="flex w-full mt-4 md:w-[691px] lg:w-[243px] "
+              aria-label="Lihat semua solusi layanan dan produk (Lihat semua solusi)"
+            >
               View All Solutions
               <ArrowRight />
             </Button>

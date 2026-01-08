@@ -74,8 +74,8 @@ const Portfolio = () => {
         <h3 className="titleh3 text-center pt-82 md:pt-28 lg:pt-52">Trusted By</h3>
         <Tape />
       </div>
-      <Link href={'/detail-portfolio'} className="p-4 md:p-8 flex justify-center">
-        <Button variant="secondary" className="w-full md:w-[691px] lg:w-[243px] ">
+      <Link href={'/detail-portfolio'} className="p-4 md:p-8 flex justify-center" aria-label="Link lebih lanjut Projek Portofolio (View Projects)">
+        <Button variant="secondary" className="w-full md:w-[691px] lg:w-[243px] " aria-label="Lihat lebih lanjut Projek Portofolio (View Projects)">
           View Projects
           <ArrowUpRight />
         </Button>

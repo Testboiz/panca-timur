@@ -62,13 +62,26 @@ export default function SolutionsPage() {
             mendukung keandalan setiap proyek.
           </p>
           <div className="gap-[12px] lg:gap-[23px] flex flex-col lg:flex-row ">
-            <Button onClick={handleBookaConsultation} className="w-full lg:w-[243px]">
+            <Button
+              onClick={handleBookaConsultation}
+              className="w-full lg:w-[243px]"
+              aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
+            >
               <Phone />
               Book a Consultation
             </Button>
 
-            <Button asChild variant="secondary" className="w-full lg:w-[243px]">
-              <Link href={'/detail-portfolio'} className="flex items-center justify-center gap-2">
+            <Button
+              asChild
+              variant="secondary"
+              className="w-full lg:w-[243px]"
+              aria-label="Lihat lebih lanjut Projek Portofolio (View Projects)"
+            >
+              <Link
+                href={'/detail-portfolio'}
+                className="flex items-center justify-center gap-2"
+                aria-label="Link lebih lanjut Projek Portofolio (View Projects)"
+              >
                 View Projects
                 <ArrowUpRight />
               </Link>
@@ -119,7 +132,11 @@ export default function SolutionsPage() {
                   <Dialog>
                     <DialogTrigger asChild>
                       <div className="w-full p-4 md:-mt-2">
-                        <Button className="w-full " variant="secondary">
+                        <Button
+                          className="w-full "
+                          variant="secondary"
+                          aria-label="Pelajari lebih lanjut mengenai Mechanical dan Plumbing (Learn More)"
+                        >
                           Learn More
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
@@ -153,7 +170,11 @@ export default function SolutionsPage() {
                             <li>Cooling Tower & Air Compressor</li>
                           </ul>
                         </DialogHeader>
-                        <Button onClick={handleBookaConsultation} className="w-full lg:w-[243px]">
+                        <Button
+                          onClick={handleBookaConsultation}
+                          className="w-full lg:w-[243px]"
+                          aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
+                        >
                           <Phone /> Book a Consultation
                         </Button>
                       </div>
@@ -196,7 +217,11 @@ export default function SolutionsPage() {
                   <Dialog>
                     <DialogTrigger asChild>
                       <div className="w-full p-4 -mt-4 ">
-                        <Button className="w-full" variant="secondary">
+                        <Button
+                          className="w-full"
+                          variant="secondary"
+                          aria-label="Pelajari lebih lanjut mengenai Mechanical dan Plumbing (Learn More)"
+                        >
                           Learn More
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
@@ -232,7 +257,11 @@ export default function SolutionsPage() {
                             <li>dll.</li>
                           </ul>
                         </DialogHeader>
-                        <Button onClick={handleBookaConsultation} className="w-full lg:w-[243px]">
+                        <Button
+                          onClick={handleBookaConsultation}
+                          className="w-full lg:w-[243px]"
+                          aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
+                        >
                           <Phone /> Book a Consultation
                         </Button>
                       </div>
@@ -271,7 +300,11 @@ export default function SolutionsPage() {
                   <Dialog>
                     <DialogTrigger asChild>
                       <div className="w-full p-4 -mt-2 ">
-                        <Button className="w-full " variant="secondary">
+                        <Button
+                          className="w-full "
+                          variant="secondary"
+                          aria-label="Pelajari lebih lanjut mengenai Mechanical dan Plumbing (Learn More)"
+                        >
                           Learn More
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
@@ -302,7 +335,11 @@ export default function SolutionsPage() {
                             <li>dll.</li>
                           </ul>
                         </DialogHeader>
-                        <Button onClick={handleBookaConsultation} className="w-full lg:w-[243px]">
+                        <Button
+                          onClick={handleBookaConsultation}
+                          className="w-full lg:w-[243px]"
+                          aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
+                        >
                           <Phone /> Book a Consultation
                         </Button>
                       </div>

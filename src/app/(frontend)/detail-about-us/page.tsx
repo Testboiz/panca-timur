@@ -57,13 +57,25 @@ export default function AboutUsPage() {
             terstruktur untuk memastikan kepuasan klien
           </p>
           <div className="gap-[12px] lg:gap-[23px] flex flex-col lg:flex-row ">
-            <Button onClick={handleBookaConsultation} className="w-full lg:w-[243px]">
+            <Button
+              onClick={handleBookaConsultation}
+              className="w-full lg:w-[243px]"
+              aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
+            >
               <Phone />
               Book a Consultation
             </Button>
 
-            <Button asChild variant="secondary" className="w-full lg:w-[243px]">
-              <Link href={'/detail-portfolio'}>
+            <Button
+              asChild
+              variant="secondary"
+              className="w-full lg:w-[243px]"
+              aria-label="Lihat lebih lanjut Projek Portofolio (View Projects)"
+            >
+              <Link
+                href={'/detail-portfolio'}
+                aria-label="Link lebih lanjut Projek Portofolio (View Projects)"
+              >
                 View Projects
                 <ArrowUpRight />
               </Link>
@@ -271,6 +283,7 @@ export default function AboutUsPage() {
                       <Button
                         className="inline-flex items-center gap-2 text-[#0062B0] text-[16px] lg:text-[20px] font-[500] underline "
                         variant="link"
+                        aria-label="Lihat dokumen perusahaan Perizinan Berusaha Berbasis Resiko"
                       >
                         View Document <MoveRight />
                       </Button>
@@ -303,6 +316,7 @@ export default function AboutUsPage() {
                       <Button
                         className="inline-flex items-center gap-2 text-[#0062B0] text-[16px] lg:text-[20px] font-[500] underline "
                         variant="link"
+                        aria-label="Lihat dokumen perusahaan Akta Pendirian Perseoran Terbatas"
                       >
                         View Document <MoveRight />
                       </Button>
@@ -335,6 +349,7 @@ export default function AboutUsPage() {
                       <Button
                         className="inline-flex items-center gap-2 text-[#0062B0] text-[16px] lg:text-[20px] font-[500] underline "
                         variant="link"
+                        aria-label="Lihat dokumen perusahaan Akta Pengesahan Badan Hukum"
                       >
                         View Document <MoveRight />
                       </Button>

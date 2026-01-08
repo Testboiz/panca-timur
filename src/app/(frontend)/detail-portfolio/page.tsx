@@ -112,7 +112,11 @@ export default function PortfolioPage() {
             bangunan yang andal dan berkelanjutan.
           </p>
           <div>
-            <Button onClick={handleBookaConsultation} className="w-full lg:w-[243px]">
+            <Button
+              onClick={handleBookaConsultation}
+              className="w-full lg:w-[243px]"
+              aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
+            >
               <Phone />
               Book a Consultation
             </Button>
@@ -157,6 +161,7 @@ export default function PortfolioPage() {
                   variant="secondary"
                   className="w-full  lg:w-[243px]"
                   onClick={() => setVisibleCount((prev) => prev + 3)}
+                  aria-label="muat foto lebih banyak"
                 >
                   Load More
                   <RefreshCcw />
@@ -185,6 +190,7 @@ export default function PortfolioPage() {
                   variant="secondary"
                   className="w-full  lg:w-[243px]"
                   onClick={() => setVisibleCount((prev) => prev + 3)}
+                  aria-label="muat foto lebih banyak"
                 >
                   Load More
                   <RefreshCcw />
@@ -213,6 +219,7 @@ export default function PortfolioPage() {
                   variant="secondary"
                   className="w-full  lg:w-[243px]"
                   onClick={() => setVisibleCount((prev) => prev + 3)}
+                  aria-label="muat foto lebih banyak"
                 >
                   Load More
                   <RefreshCcw />
@@ -241,6 +248,7 @@ export default function PortfolioPage() {
                   variant="secondary"
                   className="w-full  lg:w-[243px]"
                   onClick={() => setVisibleCount((prev) => prev + 3)}
+                  aria-label="muat foto lebih banyak"
                 >
                   Load More
                   <RefreshCcw />

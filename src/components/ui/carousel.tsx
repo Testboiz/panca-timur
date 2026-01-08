@@ -171,6 +171,7 @@ function CarouselPrevious({
 
   return (
     <Button
+      aria-label="tombol lihat items sebelumnya"
       data-slot="carousel-previous"
       variant={variant}
       size={size}
@@ -201,6 +202,7 @@ function CarouselNext({
 
   return (
     <Button
+      aria-label="tombol lihat items sesudahnya"
       data-slot="carousel-next"
       variant={variant}
       size={size}

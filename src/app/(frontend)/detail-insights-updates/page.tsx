@@ -60,13 +60,25 @@ export default function InsightsUpdatesPage() {
             solusi yang kami terapkan. Dibagikan untuk memperluas wawasan dan pemahaman teknis.
           </p>
           <div className="gap-[12px] lg:gap-[23px] flex flex-col lg:flex-row ">
-            <Button onClick={handleBookaConsultation} className="w-full lg:w-[243px]">
+            <Button
+              onClick={handleBookaConsultation}
+              className="w-full lg:w-[243px]"
+              aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
+            >
               <Phone />
               Book a Consultation
             </Button>
 
-            <Button asChild variant="secondary" className="w-full lg:w-[243px]">
-              <Link href={'/detail-portfolio'}>
+            <Button
+              asChild
+              variant="secondary"
+              className="w-full lg:w-[243px]"
+              aria-label="Lihat lebih lanjut Projek Portofolio (View Projects)"
+            >
+              <Link
+                href={'/detail-portfolio'}
+                aria-label="Link lebih lanjut Projek Portofolio (View Projects)"
+              >
                 View Projects
                 <ArrowUpRight />
               </Link>
@@ -111,7 +123,11 @@ export default function InsightsUpdatesPage() {
                 </CardContent>
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button variant="link" className="justify-start text-[#0062B0] underline">
+                    <Button
+                      variant="link"
+                      className="justify-start text-[#0062B0] underline"
+                      aria-label="Baca lebih lanjut blog (Read More)"
+                    >
                       Read More
                     </Button>
                   </DialogTrigger>
@@ -210,7 +226,11 @@ export default function InsightsUpdatesPage() {
                 </CardContent>
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button variant="link" className="justify-start text-[#0062B0] underline">
+                    <Button
+                      variant="link"
+                      className="justify-start text-[#0062B0] underline"
+                      aria-label="Baca lebih lanjut blog (Read More)"
+                    >
                       Read More
                     </Button>
                   </DialogTrigger>

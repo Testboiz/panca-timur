@@ -61,7 +61,11 @@ const InsightsUpdates = () => {
                   </CardContent>
 
                   <DialogTrigger asChild>
-                    <Button variant="link" className="justify-start text-[#0062B0] underline">
+                    <Button
+                      variant="link"
+                      className="justify-start text-[#0062B0] underline"
+                      aria-label="Baca lebih lanjut blog (Read More)"
+                    >
                       Read More
                     </Button>
                   </DialogTrigger>
@@ -163,7 +167,11 @@ const InsightsUpdates = () => {
                   </CardContent>
 
                   <DialogTrigger asChild>
-                    <Button variant="link" className="justify-start text-[#0062B0] underline">
+                    <Button
+                      variant="link"
+                      className="justify-start text-[#0062B0] underline"
+                      aria-label="Baca lebih lanjut blog (Read More)"
+                    >
                       Read More
                     </Button>
                   </DialogTrigger>
@@ -233,10 +241,15 @@ const InsightsUpdates = () => {
             </DialogContent>
           </Dialog>
         </div>
-        <Link href={'/detail-insights-updates'} className=" w-full flex justify-center ">
+        <Link
+          href={'/detail-insights-updates'}
+          className=" w-full flex justify-center "
+          aria-label="Link lihat semua insights dan update (lihat semua blog)"
+        >
           <Button
             variant="secondary"
             className="flex w-full mt-[15px] md:mt-[24px] lg:mt-[32px] md:w-[691px] lg:w-[243px] "
+            aria-label="Lihat semua insights dan update (lihat semua blog)"
           >
             View All Insights
             <ArrowRight />

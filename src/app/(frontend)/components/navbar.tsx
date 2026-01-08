@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <>
       <div className="hidden lg:flex px-8 py-6 justify-between items-center">
-        <Link href={'/'}>
+        <Link href={'/'} aria-label="kembali ke halaman utama (Landing Page)">
           <Image
             src="/dokumPancaTimurR/logo.jpg"
             width={64}
@@ -59,6 +59,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.97, color: '#0070c0', textDecoration: 'underline' }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="flex items-center"
+            aria-label="ke halaman about us"
           >
             About Us
           </MotionLink>
@@ -73,6 +74,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.97, color: '#0070c0', textDecoration: 'underline' }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="flex items-center"
+            aria-label="ke halaman solutions"
           >
             Solutions
           </MotionLink>
@@ -87,6 +89,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.97, color: '#0070c0', textDecoration: 'underline' }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="flex items-center"
+            aria-label="ke halaman portfolio"
           >
             Portfolio
           </MotionLink>
@@ -101,6 +104,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.97, color: '#0070c0', textDecoration: 'underline' }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="flex items-center"
+            aria-label="ke halaman insights updates"
           >
             Insights & Updates
           </MotionLink>
@@ -109,6 +113,7 @@ const Navbar = () => {
           onClick={handleContactUs}
           variant={'default'}
           className="hidden flex w-[141px] flex-shrink-0"
+          aria-label="Kontak Panca Timur Raya"
         >
           <Phone className="w-4 h-4" />
           Contact Us
@@ -117,7 +122,7 @@ const Navbar = () => {
 
       {/* tablet & mobile */}
       <div className="lg:hidden flex flex-row justify-between px-[32px] py-[20px] ">
-        <Link href={'/'}>
+        <Link href={'/'} aria-label="kembali ke halaman utama (Landing Page)">
           <Image
             src="/dokumPancaTimurR/logo.jpg"
             width={64}
@@ -127,7 +132,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <button onClick={toggleMenu}>
+        <button onClick={toggleMenu} aria-label="Buka menu">
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
@@ -195,6 +200,7 @@ const Navbar = () => {
               onClick={handleContactUs}
               variant={'default'}
               className="flex flex w-[320px] flex-shrink-0"
+              aria-label="Kontak Panca Timur Raya"
             >
               <Phone className="w-4 h-4" />
               Contact Us

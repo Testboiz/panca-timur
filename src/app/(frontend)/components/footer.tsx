@@ -19,13 +19,17 @@ const Footer = () => {
           Dapatkan konsultasi cepat dan solusi terbaik untuk kebutuhan proyek Mechanical Electrical
           Plumbing Anda.
         </p>
-        <Button onClick={handleBookaConsultation} className="w-full lg:w-[243px]">
+        <Button
+          onClick={handleBookaConsultation}
+          className="w-full lg:w-[243px]"
+          aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
+        >
           <Phone /> Book a Consultation
         </Button>
       </div>
       <div className="pt-[58px] flex justify-between p-8 flex-col md:flex-row">
         <div className=" w-[306px]">
-          <Link href={'/'}>
+          <Link href={'/'} aria-label="Kembali ke halaman utama">
             <Image
               src="/dokumPancaTimurR/logo.jpg"
               width={128}
@@ -45,15 +49,31 @@ const Footer = () => {
         </div>
         <div className="text-left mt-8 md:mt-0 md:text-right flex flex-col gap-[12px]">
           <p className="font-[700] text-[20px]">Menu</p>
-          <Link href={'/detail-about-us'}>About Us</Link>
-          <Link href={'/detail-solutions'}>Solutions</Link>
-          <Link href={'/detail-portfolio'}>Portfolio</Link>
-          <Link href={'/detail-insights-updates'}>Insights & Updates</Link>
+          <Link href={'/detail-about-us'} aria-label="ke halaman About Us">
+            About Us
+          </Link>
+          <Link href={'/detail-solutions'} aria-label="ke halaman Solutions">
+            Solutions
+          </Link>
+          <Link href={'/detail-portfolio'} aria-label="ke halaman Portfolio">
+            Portfolio
+          </Link>
+          <Link href={'/detail-insights-updates'} aria-label="ke halaman Insights Updates">
+            Insights & Updates
+          </Link>
           <div className="flex flex-row gap-4 justify-start md:justify-end">
-            <Link href={'mailto:panca_timur_raya@yahoo.com'} target="_blank">
+            <Link
+              href={'mailto:panca_timur_raya@yahoo.com'}
+              target="_blank"
+              aria-label="Email ke panca_timur_raya@yahoo.com"
+            >
               <Mail />
             </Link>
-            <Link href={'https://wa.me/6281394056196'} target="_blank">
+            <Link
+              href={'https://wa.me/6281394056196'}
+              target="_blank"
+              aria-label="WhatsApp ke 6281394056196"
+            >
               <MessageCircle />
             </Link>
           </div>

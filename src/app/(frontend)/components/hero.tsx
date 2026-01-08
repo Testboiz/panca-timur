@@ -31,13 +31,24 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 w-full">
-          <Button onClick={handleBookaConsultation} className="w-full lg:w-[243px]">
+          <Button
+            onClick={handleBookaConsultation}
+            className="w-full lg:w-[243px]"
+            aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
+          >
             <Phone />
             Book a Consultation
           </Button>
 
-          <Link href={'/detail-portfolio'}>
-            <Button variant="secondary" className="w-full lg:w-[243px]">
+          <Link
+            href={'/detail-portfolio'}
+            aria-label="Link lebih lanjut Projek Portofolio (View Projects)"
+          >
+            <Button
+              variant="secondary"
+              className="w-full lg:w-[243px]"
+              aria-label="Lihat lebih lanjut Projek Portofolio (View Projects)"
+            >
               View Projects
               <ArrowUpRight />
             </Button>
