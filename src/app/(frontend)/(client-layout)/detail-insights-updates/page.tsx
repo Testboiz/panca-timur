@@ -29,9 +29,6 @@ import { useQuery } from '@tanstack/react-query'
 import { Config } from '../../../../payload-types'
 import { PayloadSDK } from '@payloadcms/sdk'
 import { Skeleton } from '@/components/ui/skeleton'
-import { useEffect } from 'react'
-
-// TODO : disable linking in richtext
 
 export default function InsightsUpdatesPage() {
   const sdk = new PayloadSDK<Config>({
