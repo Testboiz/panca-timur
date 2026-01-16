@@ -11,7 +11,7 @@ import {
   DialogHeader,
   DialogTrigger,
 } from '@/components/ui/dialog'
-import { ArrowRight, Phone } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import { motion } from 'motion/react'
 
@@ -25,6 +25,7 @@ import {
 import { Skeleton } from '@/components/ui/skeleton'
 import { Button } from '@/components/ui/button'
 import { RichText } from '@payloadcms/richtext-lexical/react'
+import { BookAConsultationButton } from './book-a-consultation-button'
 
 export const ServicesCarousel = () => {
   const sdk = new PayloadSDK<Config>({
@@ -39,11 +40,7 @@ export const ServicesCarousel = () => {
       })
     },
   })
-  const handleBookaConsultation = () => {
-    const pesan = `Halo, saya ingin menanyakan ...`
-    const url = `https://wa.me/6281394056196?text=${encodeURIComponent(pesan)}`
-    window.open(url, '_blank')
-  }
+
   return (
     <Carousel
       opts={{
@@ -135,13 +132,7 @@ export const ServicesCarousel = () => {
                               data={data.content}
                             />
                           </DialogHeader>
-                          <Button
-                            onClick={handleBookaConsultation}
-                            className="w-full lg:w-[243px]"
-                            aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
-                          >
-                            <Phone /> Book a Consultation
-                          </Button>
+                          <BookAConsultationButton />
                         </div>
                       </DialogContent>
                     </Dialog>
