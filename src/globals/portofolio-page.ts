@@ -77,24 +77,6 @@ export const PortofolioConfig: GlobalConfig = {
             en: 'Description',
           },
         },
-        {
-          name: 'portofolio_1',
-          type: 'upload',
-          relationTo: 'media',
-          label: {
-            id: 'Gambar Portofolio 1',
-            en: 'Portofolio 1st Picture',
-          },
-        },
-        {
-          name: 'portofolio_2',
-          type: 'upload',
-          relationTo: 'media',
-          label: {
-            id: 'Gambar Portofolio 1',
-            en: 'Portofolio 2nd Picture',
-          },
-        },
       ],
     },
   ],

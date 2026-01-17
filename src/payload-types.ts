@@ -632,8 +632,6 @@ export interface PortofolioPage {
   portofolio_hero_description?: string | null;
   portofolio_project_heading?: string | null;
   portofolio_project_description?: string | null;
-  portofolio_1?: (string | null) | Media;
-  portofolio_2?: (string | null) | Media;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -741,8 +739,6 @@ export interface PortofolioPageSelect<T extends boolean = true> {
   portofolio_hero_description?: T;
   portofolio_project_heading?: T;
   portofolio_project_description?: T;
-  portofolio_1?: T;
-  portofolio_2?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
