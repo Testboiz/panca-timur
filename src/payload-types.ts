@@ -105,7 +105,7 @@ export interface Config {
     'portofolio-page': PortofolioPage;
     'solutions-page': SolutionsPage;
     'footer-config': FooterConfig;
-    'logo-config': LogoConfig;
+    'site-config': SiteConfig;
   };
   globalsSelect: {
     'about-us-page': AboutUsPageSelect<false> | AboutUsPageSelect<true>;
@@ -114,7 +114,7 @@ export interface Config {
     'portofolio-page': PortofolioPageSelect<false> | PortofolioPageSelect<true>;
     'solutions-page': SolutionsPageSelect<false> | SolutionsPageSelect<true>;
     'footer-config': FooterConfigSelect<false> | FooterConfigSelect<true>;
-    'logo-config': LogoConfigSelect<false> | LogoConfigSelect<true>;
+    'site-config': SiteConfigSelect<false> | SiteConfigSelect<true>;
   };
   locale: null;
   user: User & {
@@ -664,11 +664,12 @@ export interface FooterConfig {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "logo-config".
+ * via the `definition` "site-config".
  */
-export interface LogoConfig {
+export interface SiteConfig {
   id: string;
-  logo?: (string | null) | Media;
+  logo: string | Media;
+  phone: string;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -772,10 +773,11 @@ export interface FooterConfigSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "logo-config_select".
+ * via the `definition` "site-config_select".
  */
-export interface LogoConfigSelect<T extends boolean = true> {
+export interface SiteConfigSelect<T extends boolean = true> {
   logo?: T;
+  phone?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;

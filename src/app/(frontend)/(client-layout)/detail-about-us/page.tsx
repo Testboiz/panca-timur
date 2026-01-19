@@ -17,11 +17,5 @@ export default async function AboutUsPage() {
   const config = await payload.findGlobal({
     slug: 'about-us-page',
   })
-  return (
-    <>
-      <Navbar />
-      <AboutUs config={config} />
-      <Footer />
-    </>
-  )
+  return <AboutUs config={config} />
 }

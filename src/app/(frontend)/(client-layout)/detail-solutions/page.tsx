@@ -26,7 +26,6 @@ export default async function SolutionsPage() {
   })
   return (
     <>
-      <Navbar />
       <div className="relative w-full h-[122px] md:h-[244px] xl:h-[400px]">
         {typeof config.solutions_hero === 'string' ? (
           <Image
@@ -93,8 +92,6 @@ export default async function SolutionsPage() {
         </p>
         <ProductsGrid />
       </div>
-
-      <Footer />
     </>
   )
 }

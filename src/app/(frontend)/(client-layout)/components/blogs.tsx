@@ -100,7 +100,7 @@ export const Blogs = ({ isForLandingPage = false }: { isForLandingPage?: boolean
                     </DialogTrigger>
                     <DialogContent className="w-screen h-screen max-w-none max-h-none flex flex-col p-0 overflow-hidden [&>button]:hidden">
                       <div className="flex-1 overflow-y-auto">
-                        <Navbar />
+                        {/* <Navbar /> */}
                         <div className="relative w-full h-[111px] md:h-[222px] lg:h-[340px] flex-shrink-0">
                           <Image
                             src="/dokumPancaTimurR/mechanicalplumbing3.jpg"
@@ -136,7 +136,7 @@ export const Blogs = ({ isForLandingPage = false }: { isForLandingPage?: boolean
                           <p className="alternative">{data.createdAt}</p>
                           <RichText data={data.content} />
                         </DialogHeader>
-                        <Footer />
+                        {/* <Footer /> */}
                       </div>
                     </DialogContent>
                   </Dialog>

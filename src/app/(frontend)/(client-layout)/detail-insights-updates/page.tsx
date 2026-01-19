@@ -25,7 +25,6 @@ export default async function InsightsUpdatesPage() {
   })
   return (
     <>
-      <Navbar />
       <div className="relative w-full h-[122px] md:h-[244px] xl:h-[400px]">
         <Image
           className="object-cover"
@@ -86,8 +85,6 @@ export default async function InsightsUpdatesPage() {
           <Blogs />
         </div>
       </div>
-
-      <Footer />
     </>
   )
 }

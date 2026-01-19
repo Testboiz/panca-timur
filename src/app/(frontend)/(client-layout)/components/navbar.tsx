@@ -1,17 +1,18 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
-import { Menu, Phone, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 import { useEffect, useState } from 'react'
 
 import { motion } from 'motion/react'
+import { ContactUsButton, ContactUsButtonMobile } from './book-a-consultation-button'
+import { SiteConfig } from '@/payload-types'
 
 const MotionLink = motion.create(Link)
 
-const Navbar = () => {
+const Navbar = ({ config }: { config: SiteConfig }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
@@ -29,25 +30,37 @@ const Navbar = () => {
     setIsOpen(!isOpen)
   }
 
-  const handleContactUs = () => {
-    const pesan = `Halo, saya ingin menanyakan ...`
-    const url = `https://wa.me/6281394056196?text=${encodeURIComponent(pesan)}`
-    window.open(url, '_blank')
-  }
-
   return (
     <>
       <div className="hidden lg:flex px-8 py-6 justify-between items-center">
         <Link href={'/'} aria-label="kembali ke halaman utama (Landing Page)">
-          <Image
+          {/* <Image
             src="/dokumPancaTimurR/logo.jpg"
             width={64}
             height={46}
             style={{ height: 'auto' }}
             className="object-contain"
-            //sizes="64px"
             alt="Gambar Logo Panca Timur Raya"
-          />
+          /> */}
+          {typeof config.logo === 'string' ? (
+            <Image
+              src={config.logo}
+              alt={config.logo}
+              width={64}
+              height={46}
+              style={{ height: 'auto' }}
+              className="object-contain"
+            />
+          ) : (
+            <Image
+              src={config?.logo?.url ?? '/dokumPancaTimurR/logo.jpg'}
+              alt={config.logo?.alt ?? 'Gambar Logo Panca Timur Raya'}
+              width={64}
+              height={46}
+              style={{ height: 'auto' }}
+              className="object-contain"
+            />
+          )}
         </Link>
         <div className="flex flex-row nav gap-14">
           <MotionLink
@@ -107,29 +120,39 @@ const Navbar = () => {
             Insights & Updates
           </MotionLink>
         </div>
-        <Button
-          onClick={handleContactUs}
-          variant={'default'}
-          className="hidden flex w-[141px] flex-shrink-0"
-          aria-label="Kontak Panca Timur Raya"
-        >
-          <Phone className="w-4 h-4" />
-          Contact Us
-        </Button>
+        <ContactUsButton />
       </div>
 
       {/* tablet & mobile */}
       <div className="lg:hidden flex flex-row justify-between px-[32px] py-[20px] ">
         <Link href={'/'} aria-label="kembali ke halaman utama (Landing Page)">
-          <Image
+          {/* <Image
             src="/dokumPancaTimurR/logo.jpg"
             width={64}
             height={46}
             style={{ height: 'auto' }}
             className="object-contain"
-            // sizes="64px"
             alt="Gambar Logo Panca Timur Raya"
-          />
+          /> */}
+          {typeof config.logo === 'string' ? (
+            <Image
+              src={config.logo}
+              alt={config.logo}
+              width={64}
+              height={46}
+              style={{ height: 'auto' }}
+              className="object-contain"
+            />
+          ) : (
+            <Image
+              src={config?.logo?.url ?? '/dokumPancaTimurR/logo.jpg'}
+              alt={config.logo?.alt ?? 'Gambar Logo Panca Timur Raya'}
+              width={64}
+              height={46}
+              style={{ height: 'auto' }}
+              className="object-contain"
+            />
+          )}
         </Link>
 
         <button onClick={toggleMenu} aria-label="Buka menu">
@@ -192,15 +215,7 @@ const Navbar = () => {
             >
               Insights & Updates
             </MotionLink>
-            <Button
-              onClick={handleContactUs}
-              variant={'default'}
-              className="flex flex w-[320px] flex-shrink-0"
-              aria-label="Kontak Panca Timur Raya"
-            >
-              <Phone className="w-4 h-4" />
-              Contact Us
-            </Button>
+            <ContactUsButtonMobile />
           </div>
           <div className="h-[30vh] w-full bg-gradient-to-t from-[#92BDEA] via-[#92BDEA]/40 to-white" />
         </div>

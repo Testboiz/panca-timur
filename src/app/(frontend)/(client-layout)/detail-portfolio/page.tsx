@@ -22,7 +22,6 @@ export default async function PortfolioPage() {
   })
   return (
     <>
-      <Navbar />
       <div className="relative w-full h-[122px] md:h-[244px] xl:h-[400px]">
         {typeof config.portofolio_hero === 'string' ? (
           <Image
@@ -61,8 +60,6 @@ export default async function PortfolioPage() {
       </div>
 
       <PortofolioTabs />
-
-      <Footer />
     </>
   )
 }

@@ -35,7 +35,6 @@ export default async function HomePage() {
   })
   return (
     <>
-      <Navbar />
       <div className="flex flex-col md:flex-row gap-6 items-center justify-between overflow-hidden">
         <div className="flex flex-col gap-4 max-w-3xl px-6 lg:px-8 w-full">
           <h1 className="titleh1 text-[#10385d]">
@@ -246,7 +245,6 @@ export default async function HomePage() {
           </Link>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

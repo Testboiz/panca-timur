@@ -1,44 +1,62 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
-import { Mail, MessageCircle, Phone } from 'lucide-react'
+import { FooterConfig, SiteConfig } from '@/payload-types'
+import { Mail, MessageCircle } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { BookAConsultationButton } from './book-a-consultation-button'
 
-const Footer = () => {
-  const handleBookaConsultation = () => {
-    const pesan = `Halo, saya ingin menanyakan ...`
-    const url = `https://wa.me/6281394056196?text=${encodeURIComponent(pesan)}`
-    window.open(url, '_blank')
-  }
+const Footer = ({
+  globalConfig,
+  textConfig,
+}: {
+  globalConfig: SiteConfig
+  textConfig: FooterConfig
+}) => {
   return (
     <div className="">
       <div className="mt-6 flex flex-col  bg-[linear-gradient(180deg,_#10385D_0%,_#0070C0_52.88%,_#E1E1E1_100%)] mx-6 rounded-[8px] justify-center items-center gap-[32px] lg:gap-[32px] py-[40px] px-[20px] md:py-[54px] md:px-[80px] lg:py-[90px] lg:px-[180px]">
-        <h1 className="text-[white] text-center titleh1">Let’s Build Something Great Together!</h1>
+        <h1 className="text-[white] text-center titleh1">
+          {/* Let’s Build Something Great Together! */}
+          {textConfig.footer_heading}
+        </h1>
         <p className="p text-[white] text-center">
-          Dapatkan konsultasi cepat dan solusi terbaik untuk kebutuhan proyek Mechanical Electrical
-          Plumbing Anda.
+          {/* Dapatkan konsultasi cepat dan solusi terbaik untuk kebutuhan proyek Mechanical Electrical
+          Plumbing Anda. */}
+          {textConfig.footer_description}
         </p>
-        <Button
-          onClick={handleBookaConsultation}
-          className="w-full lg:w-[243px]"
-          aria-label="Chat ke WhatsApp Panca Timur Raya untuk Booking Konsultasi"
-        >
-          <Phone /> Book a Consultation
-        </Button>
+        <BookAConsultationButton />
       </div>
       <div className="pt-[58px] flex justify-between p-8 flex-col md:flex-row">
         <div className=" w-[306px]">
           <Link href={'/'} aria-label="Kembali ke halaman utama">
-            <Image
+            {/* <Image
               src="/dokumPancaTimurR/logo.jpg"
               width={128}
               height={93}
               className="object-contain"
               alt="Gambar Logo Panca Timur Raya"
-            />
+            /> */}
+            {typeof globalConfig.logo === 'string' ? (
+              <Image
+                src={globalConfig.logo}
+                alt={globalConfig.logo}
+                width={128}
+                height={93}
+                className="object-contain"
+              />
+            ) : (
+              <Image
+                src={globalConfig?.logo?.url ?? '/dokumPancaTimurR/logo.jpg'}
+                alt={globalConfig.logo?.alt ?? 'Gambar Logo Panca Timur Raya'}
+                width={128}
+                height={93}
+                className="object-contain"
+              />
+            )}
           </Link>
           <p className="footer mt-[13px]">
+            {/* TODO : update with */}
             Head Office:Komp. Perumahan Pondok Cempaka Indah Blok F No.7, Bandulan-Mulyorejo,
             Malang, Jawa Timur Representative Office:Perumahan Masnaga Jalan Gunung Kerinci 1 Blok A
             No.873 Bintara, Bekasi Barat

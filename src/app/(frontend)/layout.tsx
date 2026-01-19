@@ -1,6 +1,13 @@
 import { Metadata } from 'next'
 import './styles.css'
 import { Manrope } from 'next/font/google'
+import Navbar from './(client-layout)/components/navbar'
+import Footer from './(client-layout)/components/footer'
+
+import config from '@payload-config'
+import { getPayload } from 'payload'
+
+const payload = await getPayload({ config })
 
 const manrope = Manrope({
   variable: '--font-manrope',
@@ -34,10 +41,20 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const config = await payload.findGlobal({
+    slug: 'site-config',
+  })
+  const footerConfig = await payload.findGlobal({
+    slug: 'footer-config',
+  })
   return (
     <html lang="en">
-      <body className={`${manrope.variable} antialiased`}>{children}</body>
+      <body className={`${manrope.variable} antialiased`}>
+        <Navbar config={config} />
+        {children}
+        <Footer globalConfig={config} textConfig={footerConfig} />
+      </body>
     </html>
   )
 }

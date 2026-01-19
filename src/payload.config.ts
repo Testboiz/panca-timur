@@ -1,6 +1,5 @@
 // storage-adapter-import-placeholder
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
-import { BoldFeature, ItalicFeature, lexicalEditor, LinkFeature, UnderlineFeature } from '@payloadcms/richtext-lexical'
 import path from 'path'
 import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
@@ -24,7 +23,7 @@ import { LandingConfig } from './globals/landing-page'
 import { PortofolioConfig } from './globals/portofolio-page'
 import { SolutionsConfig } from './globals/solutions-page'
 import { FooterConfig } from './globals/footer'
-import { LogoConfig } from './globals/logo'
+import { SiteConfig } from './globals/logo'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -44,22 +43,8 @@ export default buildConfig({
     PortofolioConfig,
     SolutionsConfig,
     FooterConfig,
-    LogoConfig,
+    SiteConfig,
   ],
-  // editor: lexicalEditor({
-  //   features: ({ defaultFeatures }) => [
-  //     // Either explicitly list allowed features
-  //     BoldFeature(),
-  //     ItalicFeature(),
-  //     UnderlineFeature(),
-  //     LinkFeature(),
-
-  //     // OR filter out relationshipFeature from defaults
-  //     // ...defaultFeatures.filter(
-  //     //   (feature) => feature.key !== 'relationship'
-  //     // ),
-  //   ],
-  // }),
   i18n: {
     supportedLanguages: { en, id },
     fallbackLanguage: 'id',
