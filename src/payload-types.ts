@@ -669,6 +669,21 @@ export interface FooterConfig {
 export interface SiteConfig {
   id: string;
   logo: string | Media;
+  address: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
   phone: string;
   updatedAt?: string | null;
   createdAt?: string | null;
@@ -777,6 +792,7 @@ export interface FooterConfigSelect<T extends boolean = true> {
  */
 export interface SiteConfigSelect<T extends boolean = true> {
   logo?: T;
+  address?: T;
   phone?: T;
   updatedAt?: T;
   createdAt?: T;
