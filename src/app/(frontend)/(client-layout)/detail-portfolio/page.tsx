@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import Navbar from '../components/navbar'
-import Footer from '../components/footer'
 import React from 'react'
 import { BookAConsultationButton } from '../components/book-a-consultation-button'
 import { PortofolioTabs } from '../components/portofolio-tabs'

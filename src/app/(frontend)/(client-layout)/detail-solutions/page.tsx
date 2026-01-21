@@ -1,5 +1,3 @@
-import Navbar from '../components/navbar'
-import Footer from '../components/footer'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { ArrowUpRight } from 'lucide-react'
@@ -77,8 +75,6 @@ export default async function SolutionsPage() {
       <div className="px-[20px]  md:px-[44px] md:pb-[64px] xl:pb-[70px]">
         <h1 className="titleh1 text-[#10385D] mb-[12px]"> {config.solutions_services_heading}</h1>
         <p className="p text-[#747775] mb-[21px] md:mb-[28px]">
-          {/* We provide end-to-end mechanical, electrical, and plumbing solutions for industrial and
-          commercial projects */}
           {config.solutions_services_description}
         </p>
         <ServicesCarousel />
@@ -87,7 +83,6 @@ export default async function SolutionsPage() {
       <div className="my-[35px] px-[20px] md:px-[44px] md:pb-[64px] lg:pb-[80px]">
         <h1 className="titleh1 text-[#10385D] mb-[12px]">{config.solutions_products_heading}</h1>
         <p className="p text-[#747775] mb-[21px] md:mb-[28px]">
-          {/* Equipment and systems we work with to support reliable projects */}
           {config.solutions_products_description}
         </p>
         <ProductsGrid />

@@ -1,5 +1,3 @@
-import Navbar from '../components/navbar'
-import Footer from '../components/footer'
 import AboutUs from '../components/about-us'
 import config from '@payload-config'
 import { getPayload } from 'payload'
