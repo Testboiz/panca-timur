@@ -57,6 +57,9 @@ export const Services: CollectionConfig = {
             id: 'Jelaskan layanan yang diberikan disini',
           },
         },
+        features: ({ defaultFeatures }) => [
+          ...defaultFeatures.filter((feature) => feature.key !== 'relationship'),
+        ],
       }),
 
       label: {

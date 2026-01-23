@@ -209,6 +209,9 @@ export const AboutUsConfig: GlobalConfig = {
                 id: 'Tuliskan deskripsi informasi legal',
               },
             },
+            features: ({ defaultFeatures }) => [
+              ...defaultFeatures.filter((feature) => feature.key !== 'relationship'),
+            ],
           }),
         },
         {

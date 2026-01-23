@@ -1,4 +1,9 @@
-import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import {
+  BoldFeature,
+  ItalicFeature,
+  lexicalEditor,
+  UnderlineFeature,
+} from '@payloadcms/richtext-lexical'
 import { GlobalConfig } from 'payload'
 
 export const SiteConfig: GlobalConfig = {
@@ -32,10 +37,7 @@ export const SiteConfig: GlobalConfig = {
             id: 'Tuliskan alamat anda disini',
           },
         },
-        features: ({ defaultFeatures }) => [
-          ...defaultFeatures.filter((feature) => feature.key !== 'relationship'),
-          // TODO : set features
-        ],
+        features: () => [BoldFeature(), ItalicFeature(), UnderlineFeature()],
       }),
       label: {
         id: 'Alamat',
@@ -65,6 +67,34 @@ export const SiteConfig: GlobalConfig = {
           },
         ],
       },
+    },
+    {
+      type: 'collapsible',
+      label: {
+        id: 'Bagian Footer',
+        en: 'Footer Section',
+      },
+      admin: {
+        initCollapsed: true,
+      },
+      fields: [
+        {
+          name: 'footer_heading',
+          type: 'text',
+          label: {
+            id: 'Judul',
+            en: 'Heading',
+          },
+        },
+        {
+          name: 'footer_description',
+          type: 'text',
+          label: {
+            id: 'Deskripsi',
+            en: 'Description',
+          },
+        },
+      ],
     },
   ],
 }

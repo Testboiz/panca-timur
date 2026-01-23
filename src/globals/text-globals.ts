@@ -208,6 +208,9 @@ export const TextConfig: GlobalConfig = {
                         id: 'Tuliskan misi disini',
                       },
                     },
+                    features: ({ defaultFeatures }) => [
+                      ...defaultFeatures.filter((feature) => feature.key !== 'relationship'),
+                    ],
                   }),
                 },
               ],
@@ -280,6 +283,9 @@ export const TextConfig: GlobalConfig = {
                         id: 'Tuliskan deskripsi informasi legal',
                       },
                     },
+                    features: ({ defaultFeatures }) => [
+                      ...defaultFeatures.filter((feature) => feature.key !== 'relationship'),
+                    ],
                   }),
                 },
               ],
