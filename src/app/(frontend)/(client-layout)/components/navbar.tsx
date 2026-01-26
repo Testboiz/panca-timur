@@ -146,7 +146,7 @@ const Navbar = ({ config }: { config: SiteConfig }) => {
 
       {isOpen && (
         <div className="lg:hidden flex flex-col justify-center items-center ">
-          <div className="nav flex flex-col px-8 gap-[48px] justify-center items-center min-h-[calc(100vh-230px)]">
+          <div className="nav flex flex-col px-8 gap-[48px] justify-center items-center w-full min-h-[calc(100vh-230px)]">
             <MotionLink
               href={'/detail-about-us'}
               onClick={() => setIsOpen(false)}

@@ -40,7 +40,7 @@ export const Blogs = ({ isForLandingPage = false }: { isForLandingPage?: boolean
         </div>
       )}
       {query.error && (
-        <Card className="w-[332px] md:w-[699px] md:h-[236px] lg:w-[945px] lg:h-[306px] flex flex-col md:mb-[20px] lg:mb-[44px] ">
+        <Card className="w-[332px] md:w-[699px] md:h-[236px] lg:w-[945px] lg:h-[306px] flex flex-col mb-[20px] lg:mb-[44px] ">
           <CardHeader className="w-full my-auto ">
             <CardTitle className="text-center">Belum ada Blog</CardTitle>
           </CardHeader>
@@ -74,7 +74,7 @@ export const Blogs = ({ isForLandingPage = false }: { isForLandingPage?: boolean
               transition={{ duration: 0.7, type: 'spring' }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              <Card className="w-[332px] md:w-[699px] md:h-[236px] lg:w-[945px] lg:h-[306px] overflow-hidden flex flex-col md:flex-row md:gap-[16px] lg:gap-[32px] md:mb-[20px] lg:mb-[44px]">
+              <Card className="w-[332px] md:w-[699px] md:h-[236px] lg:w-[945px] lg:h-[306px] overflow-hidden flex flex-col md:flex-row gap-[16px] lg:gap-[32px] mb-[20px] lg:mb-[44px]">
                 <div className="relative w-full h-[280px] md:w-[280px] md:h-[236px] lg:w-[400px] lg:h-[306px] flex-shrink-0">
                   {typeof data.featuredImg === 'string' ? (
                     <Image

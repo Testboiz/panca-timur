@@ -67,11 +67,13 @@ export default async function SolutionsPage() {
         </div>
       </div>
 
-      <div className="px-[20px]  md:px-[44px] md:pb-[64px] xl:pb-[70px]">
-        <h1 className="titleh1 text-[#10385D] mb-[12px]"> {config.solutions_services_heading}</h1>
-        <p className="p text-[#747775] mb-[21px] md:mb-[28px]">
-          {config.solutions_services_description}
-        </p>
+      <div className=" md:pb-[64px] xl:pb-[70px]">
+        <div className="px-[20px]  md:px-[44px]">
+          <h1 className="titleh1 text-[#10385D] mb-[12px]"> {config.solutions_services_heading}</h1>
+          <p className="p text-[#747775] mb-[21px] md:mb-[28px]">
+            {config.solutions_services_description}
+          </p>
+        </div>
         <ServicesCarousel />
       </div>
 

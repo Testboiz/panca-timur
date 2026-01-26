@@ -40,7 +40,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
         )}
       </div>
       <div className="text-left gap-[20px] p-[20px] md:p-[40px] lg:p-[60px]">
-        <Breadcrumb>
+        <Breadcrumb className="py-5">
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Home</BreadcrumbLink>
@@ -55,9 +55,9 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <h1 className="titleh1 text-[#0062B0]">{blog.title}</h1>
-        <p className="alternative">{new Date(blog.updatedAt).toLocaleString('id-ID')}</p>
-        <RichText data={blog.content} />
+        <h1 className="titleh1 text-[#0062B0] ">{blog.title}</h1>
+        <p className="alternative py-5">{new Date(blog.updatedAt).toLocaleString('id-ID')}</p>
+        <RichText data={blog.content} className="" />
       </div>
     </div>
   )

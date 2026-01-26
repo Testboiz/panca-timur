@@ -71,9 +71,9 @@ export const ServicesCarousel = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4 }}
                   viewport={{ once: true, amount: 0.3 }}
-                  className="flex justify-center"
+                  className="flex justify-start"
                 >
-                  <Card className="mx-auto w-[294px]  xl:w-[363px] overflow-hidden">
+                  <Card className="mx-auto w-[294px] xl:w-[363px] overflow-hidden ">
                     <div className="relative w-full h-[303px] xl:h-[341px] min-h-[303px] xl:min-h-[341px]  ">
                       {typeof data.featuredImg === 'string' ? (
                         <Image

@@ -33,7 +33,7 @@ export const ContactUsButton = () => {
     <Button
       onClick={handleBookaConsultation}
       variant={'default'}
-      className="hidden flex w-[141px] flex-shrink-0"
+      className="hidden flex w-[300px] md:w-[351px] lg:w-[141px] flex-shrink-0"
       aria-label="Kontak Panca Timur Raya"
     >
       <Phone className="w-4 h-4" />
@@ -53,7 +53,7 @@ export const ContactUsButtonMobile = () => {
     <Button
       onClick={handleBookaConsultation}
       variant={'default'}
-      className="hidden flex w-[141px] flex-shrink-0"
+      className="hidden flex w-[300px] md:w-[351px] lg:w-[141px] flex-shrink-0"
       aria-label="Kontak Panca Timur Raya"
     >
       <Phone className="w-4 h-4" />
