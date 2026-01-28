@@ -26,6 +26,8 @@ export default async function PortfolioPage() {
             src={config.portofolio_hero}
             alt={config.portofolio_hero}
             fill
+            priority
+            loading="eager"
             className="object-cover"
           />
         ) : (
@@ -33,6 +35,8 @@ export default async function PortfolioPage() {
             src={config?.portofolio_hero?.url ?? '/dokumPancaTimurR/hvac1.jpg'}
             alt={config.portofolio_hero?.alt ?? 'Image Portfolio'}
             fill
+            priority
+            loading="eager"
             className="object-cover"
           />
         )}

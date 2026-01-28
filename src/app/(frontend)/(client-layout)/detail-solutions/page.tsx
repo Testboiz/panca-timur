@@ -30,6 +30,8 @@ export default async function SolutionsPage() {
             src={config.solutions_hero}
             alt={config.solutions_hero}
             fill
+            priority
+            loading="eager"
             className="object-cover"
           />
         ) : (
@@ -37,6 +39,8 @@ export default async function SolutionsPage() {
             src={config?.solutions_hero?.url ?? '/dokumPancaTimurR/electrical4.jpg'}
             alt={config.solutions_hero?.alt ?? 'Image Solutions'}
             fill
+            priority
+            loading="eager"
             className="object-cover"
           />
         )}

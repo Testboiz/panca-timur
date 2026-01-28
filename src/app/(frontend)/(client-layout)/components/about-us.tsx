@@ -32,6 +32,8 @@ const AboutUs = ({ config }: { config: AboutUsPage }) => {
             src={config.about_us_hero}
             alt={config.about_us_hero}
             fill
+            priority
+            loading="eager"
             className="object-cover"
           />
         ) : (
@@ -39,6 +41,8 @@ const AboutUs = ({ config }: { config: AboutUsPage }) => {
             src={config?.about_us_hero?.url ?? '/dokumPancaTimurR/team.jpg'}
             alt={config.about_us_hero?.alt ?? 'Gambar Sampul'}
             fill
+            priority
+            loading="eager"
             className="object-cover"
           />
         )}
@@ -215,9 +219,7 @@ const AboutUs = ({ config }: { config: AboutUsPage }) => {
         <h1 className="titleh1 text-[#10385d] pb-4">{config.about_us_legal_heading}</h1>
         <div className="flex flex-col lg:flex-row lg:gap-[44px]">
           <div className="lg:w-[450px] xl:w-[580px]">
-            <p className="w-full p text-[#747775] pb-4">
-              {config.about_us_legal_subtitle}
-            </p>
+            <p className="w-full p text-[#747775] pb-4">{config.about_us_legal_subtitle}</p>
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

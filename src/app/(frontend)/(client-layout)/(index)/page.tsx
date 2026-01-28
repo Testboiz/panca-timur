@@ -65,11 +65,15 @@ export default async function HomePage() {
               width={653}
               height={505}
               className="w-full h-auto object-contain"
+              priority
+              loading="eager"
             />
           ) : (
             <Image
               src={config?.landing_hero?.url ?? '/dokumPancaTimurR/electrical2.jpg'}
               alt={config.landing_hero?.alt ?? 'Gambar Logo Panca Timur Raya'}
+              loading="eager"
+              priority
               width={653}
               height={505}
               className="w-full h-auto object-contain"
@@ -196,7 +200,7 @@ export default async function HomePage() {
           </div>
         </div>
         <div>
-          <h3 className="titleh3 text-center pt-82 md:pt-28 lg:pt-52">Trusted By</h3>
+          <h2 className="titleh3 text-center pt-82 md:pt-28 lg:pt-52">Trusted By</h2>
           <Tape />
         </div>
         <Link

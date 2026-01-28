@@ -27,6 +27,8 @@ export default async function InsightsUpdatesPage() {
         <Image
           className="object-cover"
           fill
+          priority
+          loading="eager"
           alt="Image Insights Updates"
           src={'/dokumPancaTimurR/hvac8.jpg'}
         />
@@ -35,6 +37,8 @@ export default async function InsightsUpdatesPage() {
             src={config.insights_hero}
             alt={config.insights_hero}
             fill
+            priority
+            loading="eager"
             className="object-cover"
           />
         ) : (
