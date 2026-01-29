@@ -9,8 +9,13 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/card'
 import Link from 'next/link'
+import { useState } from 'react'
+import { RefreshCcw } from 'lucide-react'
 
 export const Blogs = ({ isForLandingPage = false }: { isForLandingPage?: boolean }) => {
+  const [visibleCount, setVisibleCount] = useState(4)
+  const increment = 2
+
   const sdk = new PayloadSDK<Config>({
     baseURL: '/api',
   })
@@ -65,7 +70,7 @@ export const Blogs = ({ isForLandingPage = false }: { isForLandingPage?: boolean
         </Card>
       )}
       {query.data &&
-        query.data.docs.map((data) => {
+        query.data.docs.slice(0, visibleCount).map((data) => {
           return (
             <motion.div
               key={data.id}
@@ -113,6 +118,20 @@ export const Blogs = ({ isForLandingPage = false }: { isForLandingPage?: boolean
             </motion.div>
           )
         })}
+
+      {query.data && visibleCount < query.data.docs.length && (
+        <div className="w-full flex justify-center">
+          <Button
+            variant="secondary"
+            className="w-full lg:w-[243px]"
+            onClick={() => setVisibleCount((prev) => prev + increment)}
+            aria-label="Muat blog lebih banyak"
+          >
+            Load More Blogs
+            <RefreshCcw />
+          </Button>
+        </div>
+      )}
     </>
   )
 }

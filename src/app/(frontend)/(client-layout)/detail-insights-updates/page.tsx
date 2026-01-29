@@ -81,20 +81,6 @@ export default async function InsightsUpdatesPage() {
 
         <div className="flex flex-col items-center justify-center mt-[16px] lg:mt-[26px]">
           <Blogs />
-          <Button
-            asChild
-            variant="secondary"
-            className="w-full lg:w-[243px]"
-            aria-label="Lihat lebih lanjut Projek Portofolio (View Projects)"
-          >
-            <Link
-              href={'/detail-portfolio'}
-              aria-label="Link lebih lanjut Projek Portofolio (View Projects)"
-            >
-              View More Blogs
-              <ArrowUpRight />
-            </Link>
-          </Button>
         </div>
       </div>
     </>
